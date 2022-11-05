@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t ZPiyapanZ/simple-ci-cd-react -f Dockerfile.dev .
+  - docker build -t piyapan/simple-ci-cd-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true ZPiyapanZ/simple-ci-cd-react npm run test
+  - docker run -e CI=true piyapan/simple-ci-cd-react npm run test
